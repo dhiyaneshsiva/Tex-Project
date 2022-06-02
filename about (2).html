@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambara Export | About</title>
+        <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font awesome kit  -->
+    <script src="https://kit.fontawesome.com/607329fa87.js" crossorigin="anonymous"></script>
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orelega+One&display=swap" rel="stylesheet">
+
+    <!-- custom Styles -->
+    <style>
+         :root {
+            --background-color: #f3c175e3; /* Background Color Root */
+            --text-color:#2E3192; /*text Color */
+            --main-content-bcg:#F6F6F6;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        /* Common Class For Some needed Element  */
+        .width-height { 
+        width: 100%;
+        height: 100%;
+        }
+        .header1 {
+            width: 100%;
+            height: 8vh;
+            background-color: var(--background-color);
+            border-bottom: 2px dashed black;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .header-list  {
+            display:flex;
+            justify-content: flex-start;
+            /* background-color: var(--text-color); Used Just To Check */ 
+            height: 8vh;
+            width: 60%;
+        }
+        .header-list li {
+            align-items: center;
+            list-style-type: none;
+            margin: 10px;
+            
+        }
+        .header-list li a{
+            text-decoration: none;
+            color: white;
+        }
+        .bi-envelope {
+            color: red;
+            background-color: black;
+        }
+        .header-logo {
+            justify-content: space-between;
+            /* background-color: var(--text-color); used To Check*/
+            height: 8vh;
+            width: 15%;
+            justify-content: space-between;
+        }
+        .insta-logo {
+            /* background-color: var(--text-color); used to check*/
+            width: 500px;
+            height: 500px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .twitterologo {
+            margin-left: 30px;
+        }
+        .fa-instagram {
+            color: white;
+            font-size:25px;
+            text-align: center;
+        }
+        .fa-linkedin {
+            color: white;
+            font-size:25px;
+            text-align: center;
+        }
+    @media only screen and (max-width:730px) {
+            .phone-number  {
+                /* display: none; */
+                font-size: 70%;
+            }
+            .email-id {
+                font-size: 70%;
+            }
+
+        }
+    @media only screen and (max-width:600px) {
+            /* body {
+                display: none;
+            } */
+            .phone-number  {
+                /* display: none; */
+                text-align: center;
+                width: 100%;
+                position: relative;
+                margin: auto;
+            }
+            .header1 {
+                height: 17vh;
+                width: 100%;
+            }
+            .header1-main{
+                margin: auto;
+                /* height: 20vh; */
+                width: 80%;
+                /* background-color: black; */
+                display: block;
+            }
+            .header-list {
+                width: 100%;
+                /* background-color: palevioletred; */
+                margin: auto;
+            }
+            .header-list li {
+                margin: auto;
+            }
+            .email-id {
+                text-align: center;
+                width: 100%;
+                position: relative;
+                margin: auto;
+            }
+            .header-logo {
+                /* display: none; */
+                margin-top: 50px;
+                display: flex;
+                position: absolute;
+                margin-left: 33%;
+            }
+            .insta-logo {
+                margin-top: -12px;
+            }
+            .twitterologo {
+                margin-left: 40%;
+            }
+        }
+        @media only screen and (max-width:500px)  {
+            .header1 {
+                height: 10vh;
+            }
+        }
+    @media only screen and (max-width:360px) {
+            .email-id {
+                font-size: 60%;
+                position: relative;
+            }
+            .phone-number {
+                font-size: 60%;
+            }
+            .fa-linkedin {
+                font-size: 90%;
+                position: absolute;
+                margin-top: -1px;
+            }
+            .fa-instagram {
+                font-size: 50%;
+                position: absolute;
+                margin-top: 10px;
+            }
+            .header1 {
+                height: 12vh;
+            }
+            .header2-logo img {
+                width: 30%;
+            }
+        }
+    @media only screen and (max-width:350px) {
+            .email-id {
+                font-size: 50%;
+            }
+            .phone-number {
+                font-size: 50%;
+            }
+            .header1 {
+                height: 8vh;
+            }
+            .header2-logo img {
+                width: 50%;
+            }
+        }
+    @media only screen and (max-width:280px) {
+            .email-id {
+                font-size: 40%;
+                margin: auto;
+            }
+            .phone-number {
+                font-size: 40%;
+                margin: auto;
+            }
+            .fa-linkedin {
+                font-size: 54%;
+                position: absolute;
+                margin-top: -1px;
+            }
+            .fa-instagram {
+                font-size: 30%;
+                position: absolute;
+                margin-top: 10px;
+            }
+            .header1 {
+                height: 6vh;
+            }
+            .header2-logo img {
+                width: 30%;
+            }
+        } 
+        li {
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.342);
+            font-size: 15px;
+        }
+        .header2{
+            margin-top: 2px;
+            /* background-color: red; */
+            height: 15vh;
+            border-bottom:2px solid var(--text-color);
+            position: relative;
+        }
+        .header2-container {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .header2-logo {
+            height: 14vh;
+            display: flex;
+            width: 50%;
+        }
+        .header2-logo img {
+            border-radius: 50%;
+            width: 20%; 
+            margin-left: 5%;
+        }
+        .h1 {
+            /* margin: auto; */
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 10px;
+        }
+        .nav-links {
+            display: flex;
+            width: 50%;
+            justify-content: space-evenly;
+            margin: auto;
+        }
+        .nav-links li .black {
+            color: black;
+        }
+        .fa-bars {
+            font-size: 30px;
+            display: none;
+            margin: auto;
+        }
+        @media only screen and (max-width:800px){
+            .nav-links {
+                /* display: none; */
+                flex-direction: column ;
+                position: absolute;
+                background-color: #2E3192;
+                width: 0%;
+                text-align: center;
+                top: 100%;
+                left: -32px;
+                transition: all 300ms;
+            }
+            a {
+                color: rgba(255, 255, 255, 0.404);
+            }
+            .nav-links li .black {
+                color: white;
+            }
+            .nav-links li a:hover {
+                color: white;
+            }
+            .fa-bars {
+            /* font-size: 30px; */
+            display: block;
+            margin-right: 5%;
+            }
+            .h1 {
+            margin: auto;
+            text-align: center;
+            }
+            .header2-logo {
+                justify-content: space-between;
+                width: 80%;
+            }
+        }
+        .nav-show {
+            width: 100%;
+            z-index: 1;
+            right: 0px;
+            left: 0px;
+        }
+        @media only screen and (max-width:800px) {
+            .h1 {
+                font-size: 80%;
+                text-align: center;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: 10%;
+            }
+            .header2 {
+                height: 9vh;
+            }
+            .fa-bars {
+                font-size: 80%;
+            }
+            .header2-logo {
+                height: 8vh;
+                width: 40%;
+            }
+        }
+        @media only screen and (max-width:500px) {
+            .header2-logo {
+                width: 100%;
+            }
+        }
+        .h1 {
+            color: var(--text-color);
+        }
+        main {
+            background-color: var(--main-content-bcg);
+        }
+        .about-content  {
+            padding-left: 10%;
+            width: 100;
+            position: relative;
+            margin-top: 2%;
+            height: 100%;
+        }
+        /* .about-content h1 {
+         
+        } */
+        .about-content img {
+            position: absolute;
+            float: right;
+            top: 10%;            
+            width: 20%;
+            height: auto;
+            right: 2%;
+            border-radius: 0 30px 0 30px;
+        }
+        .about-para,.about-para2 {
+            width: 70%;
+            font-size: 20px;
+        }
+        .about-content p {
+            font-size: 20px;
+        }
+        .vision1,.mission {
+            color: var(--text-color);
+           
+        }
+        .vision {
+            text-align: center;
+            margin: 5%;
+        }
+        .last-content {
+            display: flex;
+        }
+        .our-vision {
+            width: 50%;
+            margin: 2%;
+            background-color: rgba(255, 255, 255, 0.541);
+            padding: 2%;
+            border-radius: 30px;
+        }
+        .our-vision h1{
+            text-align: center;
+        }
+        .our-vision p{
+            text-align: center;
+            font-size: 20px;
+        }
+        .our-mission {
+            width: 50%;
+            margin: 2%;
+            background-color: rgba(255, 255, 255, 0.541);
+            padding: 2%;
+            border-radius: 30px;
+        }
+        .our-mission h1{
+            text-align: center;
+        }
+        .our-mission p{
+            text-align: center;
+            font-size: 20px;
+        }
+        @media only screen and (max-width:900px){
+            .about-content  {
+            padding-left: 10%;
+            width: 100;
+            margin-top: 2%;
+            height: 100%;
+        }
+        .about-content img {
+            height: auto;
+            border-radius: 0 30px 0 30px;
+            position: relative;
+            width: 100%;
+        }
+        .about-para,.about-para2 {
+            width: 100%;
+            font-size: 20px;
+        }
+        .about-content p {
+            font-size: 20px;
+        }
+        .about-content h1 {
+            text-align: center;
+        }
+        .abouth1 {
+            display: none;
+        }
+        }
+        @media only  screen and (max-width:700px){
+            .last-content {
+                display: flex;
+                flex-direction: column;
+            }
+            .our-mission {
+                width: 90%;             
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 3%;
+            }
+            .our-vision {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        footer {
+            background-color: var(--text-color);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .contact {
+            color: white;
+            margin-top: 2%;
+        }
+        .location {
+            margin-top: 1%;
+        }
+        .location-para {
+            height: 30vh;
+        }
+        .location h1 {
+            color: white;
+        }
+        @media only screen and (max-width:650px) {
+            .location-para {
+            width: 100%;
+        }
+        }
+        @media only screen and (max-width:500px) {
+            footer{
+                display: flex;
+                margin-top: 2%;
+                flex-direction: column;
+            }
+            .contact {
+                text-align: center;
+            }
+            .location {
+                text-align: center;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header class="header1"> 
+        <div class="header1-main">
+        <div class="header-content">
+        <ul class="header-list">
+        <li><a href="#" class="email-id"> <i class="fa-solid fa-envelope"></i>&nbsp;dhiyanesh.siva@outlook.com </a></li> <!-- Instgram ID  -->
+        <li><a href="#" class="phone-number"> <i class="fa-solid fa-phone"></i>&nbsp;+91 8428466822 </a></li> <!-- Contact Number  -->
+        </ul>
+        <div class="header-logo">
+            <span class="insta-logo"><i class="fa-brands fa-instagram"></i></span> &nbsp;
+            <span class="twitterologo"><i class="fa-brands fa-linkedin"></i></span>
+        </div>
+        </div>
+    </div>
+    </header>
+    <header class="header2">
+        <div class="header2-container">
+            <div class="header2-logo">
+                <img src="data:image/png;base64,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" alt="logo">
+            
+                <h1 class="h1"> AMBARA EXPORT </h1>
+        </div>
+            <ul class="nav-links">
+                <li><a href="home.html" >Home</a></li>
+                <li><a href="#" class="black">About</a></li>
+                <li><a href="#">Quality</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Process</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+                <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <main> 
+        <div class="imgage">
+            <img src="https://www.ambalhometex.com/assets/img/banner-about.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h1> <span class="abouth1"> About </span> <span class="h1"> Ambara Export </span></h1>
+            <p class="about-para">Ambara Export has made a mark for ourselves as a premium manufacturers and exporters of Home Decor products that include, Kitchen and table linen, Bed linen, Living linen, Accessory textile , baby textile, outdoor linen and natural theme range products. Ambara Export symbolizes the hard working and enterprising nature of our people and trust that it is possessed amongst the buying community.We are a small knit of people with a vision to supply the Best quality articles at credible pricing and to have a healthy merchandise with our clients.</p>
+            <p class="about-para2">We have ample of experience coupling with in-depth knowledge in the field. We offer an exclusive range of delicately designed products to meet the various expectations of our wide world customers.</p>
+            <img src="https://www.ambalhometex.com/assets/img/About%20page.jpg" alt="">
+            <p>Our team understands the requirements of the each and every customer and offers them their desired range of merchandise. The Ambara Export products are ideally designed to decorate your Bedroom, Living, Kitchen, Garden & Patio. All our products are easy to wash, durable, voguish and are available in various colors and designs.</p>
+        </div>
+        <div class="vision">
+            <h1><span class="vision1">Vision </span> and <span class="mission"> Mission </span></h1>
+        </div>
+        <div class="last-content">
+        <div class="our-vision">
+            <h1>Our <span class="vision1"> Vision </span></h1>
+            <p>To ensure a right quality and price of the products at the right time and to provide a better life for our employees and the society. Our vision assures; Competitive Pricing, Consistent On-time Deliveries, Impeccable Product Quality, Excellence in Customer Focus, Engagement and Satisfaction, Commitment towards creativity and Innovation.</p>
+        </div>
+        <div class="our-mission">
+            <h1>Our <span class="mission"> Mission </span></h1>
+            <p>Ambara Export is dedicated to achieve consistent improvement in the objective of providing products & services to the buyers through on Time Delivery & Enhancing Customers Satisfaction by means of Quality and Value</p>
+
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="contact">
+            <h1 class="footer-header">CONTACT</h1>
+            <p class="address">
+                <i class="fa fa-location-arrow"></i>
+                AMBARA EXPORT <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;Vennamalai post, <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;Karur- 639006, Tamilnadu
+            </p>
+            <p class="number">
+                <i class="fa fa-phone" aria-hidden="true"> </i>
+                +91 84284 66822 
+            </p>
+            <p class="mail-id">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                dhiyanesh.siva@outlook.com
+            </p>
+        </div>
+        <div class="location">
+            <h1 class="location">
+                LOCATE US 
+            </h1>
+            <p><iframe class="location-para" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7833.616031158437!2d78.07885932158229!3d10.977859101279497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa2e4dac61fb6d%3A0xac37cb637bebe850!2sVengamedu%2C%20Tamil%20Nadu%20639006!5e0!3m2!1sen!2sin!4v1651161815759!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+    </footer>
+    <script>
+        let dhiya = document.querySelector(".fa-bars");
+        let Links = document.querySelector(".nav-links");
+    
+        dhiya.addEventListener('click',()=>{
+            Links.classList.toggle("nav-show");
+        });
+</script>
+</body>
+</html>
